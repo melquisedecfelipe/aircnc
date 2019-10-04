@@ -32,6 +32,7 @@
 This project was developed with the following technologies:
 
 Backend
+-  [Cors](https://github.com/expressjs/cors)
 -  [Express](https://expressjs.com/)
 -  [Mongoose](https://mongoosejs.com/mul)
 -  [Multer](https://github.com/expressjs/multer)
