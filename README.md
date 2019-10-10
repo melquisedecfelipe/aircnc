@@ -1,5 +1,5 @@
 <h1 align="center">
-    <!-- <img alt="aircnc" src="https://res.cloudinary.com/dtifsqadc/image/upload/v1569958467/logo_cofmzg.svg" /> -->
+    <img alt="aircnc" src="https://res.cloudinary.com/dtifsqadc/image/upload/v1570725342/logo_3x_rkilot.png" />
     <br>
 </h1>
 
@@ -38,6 +38,11 @@ Backend
 -  [Multer](https://github.com/expressjs/multer)
 -  [Nodemon](https://nodemon.io/)
 
+Frontend
+-  [Axios](https://github.com/axios/axios)
+-  [React](https://reactjs.org/)
+-  [React router](https://reacttraining.com/react-router/)
+
 ## :information_source: How To Use
 
 To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.16](https://nodejs.org/) or higher + [Yarn v1.13](https://yarnpkg.com/) or higher installed on your computer. From your command line:
@@ -55,6 +60,13 @@ $ npm i
 
 # Run backend
 $ npm run dev
+
+# Go into the frontend and install dependencies
+$ cd ../frontend
+$ npm i
+
+# Run frontend
+$ npm start
 ```
 
 ## :memo: License
