@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="aircnc" src="https://res.cloudinary.com/dtifsqadc/image/upload/v1570725342/logo_3x_rkilot.png" />
+    <img alt="aircnc" src="https://res.cloudinary.com/dtifsqadc/image/upload/v1570725631/logo_2x_npgift.png" />
     <br>
 </h1>
 
