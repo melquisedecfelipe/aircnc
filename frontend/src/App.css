@@ -13,7 +13,7 @@ html, body, #root {
 
 body {
   background: #000 url(./assets/background.jpg) no-repeat;
-  background-size: conver;
+  background-size: cover;
   -webkit-font-smoothing: antialiased !important;
 }
 
