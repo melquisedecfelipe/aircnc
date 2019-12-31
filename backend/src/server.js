@@ -1,16 +1,17 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const path = require('path');
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+const path = require("path");
+require("dotenv").config();
 
-const routes = require('./routes');
+const routes = require("./routes");
 
 const app = express();
 
-mongoose.connect('mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.net/admin?retryWrites=true&w=majority', {
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+  useUnifiedTopology: true
+});
 
 // GET, POST, PUT, DELETE
 
@@ -20,7 +21,7 @@ mongoose.connect('mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.net
 
 app.use(cors());
 app.use(express.json());
-app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads' )));
+app.use("/files", express.static(path.resolve(__dirname, "..", "uploads")));
 app.use(routes);
 
 app.listen(3333);
