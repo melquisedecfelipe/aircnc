@@ -58,6 +58,9 @@ $ cd aircnc
 $ cd backend
 $ npm i
 
+# Create .env file and add database url
+$ MONGO_URL='mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.net/aircnc?retryWrites=true&w=majority'
+
 # Run backend
 $ npm run dev
 
