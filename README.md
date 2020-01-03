@@ -32,16 +32,18 @@
 This project was developed with the following technologies:
 
 Backend
--  [Cors](https://github.com/expressjs/cors)
--  [Express](https://expressjs.com/)
--  [Mongoose](https://mongoosejs.com/mul)
--  [Multer](https://github.com/expressjs/multer)
--  [Nodemon](https://nodemon.io/)
+
+- [Cors](https://github.com/expressjs/cors)
+- [Express](https://expressjs.com/)
+- [Mongoose](https://mongoosejs.com/mul)
+- [Multer](https://github.com/expressjs/multer)
+- [Nodemon](https://nodemon.io/)
 
 Frontend
--  [Axios](https://github.com/axios/axios)
--  [React](https://reactjs.org/)
--  [React router](https://reacttraining.com/react-router/)
+
+- [Axios](https://github.com/axios/axios)
+- [React](https://reactjs.org/)
+- [React router](https://reacttraining.com/react-router/)
 
 ## :information_source: How To Use
 
@@ -54,12 +56,12 @@ $ git clone https://github.com/melquisedecfelipe/aircnc
 # Go into the repository
 $ cd aircnc
 
+# Create .env file and add database url
+$ MONGO_URL='mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.net/aircnc?retryWrites=true&w=majority'
+
 # Go into the backend and install dependencies
 $ cd backend
 $ npm i
-
-# Create .env file and add database url
-$ MONGO_URL='mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.net/aircnc?retryWrites=true&w=majority'
 
 # Run backend
 $ npm run dev
@@ -73,6 +75,7 @@ $ npm start
 ```
 
 ## :memo: License
+
 This project is under the MIT license. See the [LICENSE](https://github.com/melquisedecfelipe/aircnc/blob/master/LICENSE) for more information.
 
 ---
