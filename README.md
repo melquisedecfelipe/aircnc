@@ -62,12 +62,12 @@ $ git clone https://github.com/melquisedecfelipe/aircnc
 # Go into the repository
 $ cd aircnc
 
-# Create .env file and add database url
-$ echo "MONGO_URL='mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.net/aircnc?retryWrites=true&w=majority'" >> .env
-
 # Go into the backend and install dependencies
 $ cd backend
 $ npm i
+
+# Create .env file and add database url
+$ echo "MONGO_URL='mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.net/aircnc?retryWrites=true&w=majority'" >> .env
 
 # Run backend
 $ npm run dev
