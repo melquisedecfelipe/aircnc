@@ -78,6 +78,13 @@ $ npm i
 
 # Run frontend
 $ npm start
+
+# Go into the mobile and install dependencies
+$ cd ../mobile
+$ npm i
+
+# Run mobile
+$ expo start
 ```
 
 ## :memo: License
