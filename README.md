@@ -37,6 +37,7 @@ Backend
 - [Express](https://expressjs.com/)
 - [Mongoose](https://mongoosejs.com/mul)
 - [Multer](https://github.com/expressjs/multer)
+- [Socket.io](http://socket.io/)
 - [Nodemon](https://nodemon.io/)
 
 Frontend
@@ -44,12 +45,14 @@ Frontend
 - [Axios](https://github.com/axios/axios)
 - [React](https://reactjs.org/)
 - [React router](https://reacttraining.com/react-router/)
+- [Socket.io client](https://github.com/socketio/socket.io-client)
 
 Mobile
 
 - [Axios](https://github.com/axios/axios)
 - [React native](https://facebook.github.io/react-native/)
 - [React navigation](https://reactnavigation.org/)
+- [Socket.io client](https://github.com/socketio/socket.io-client)
 
 ## :information_source: How To Use
 
