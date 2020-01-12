@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   SafeAreaView,
   Text,
@@ -7,17 +7,16 @@ import {
   AsyncStorage,
   StyleSheet,
   TouchableOpacity
-} from 'react-native';
+} from "react-native";
 
-import api from '../services/api';
+import api from "../services/api";
 
 export default function Book({ navigation }) {
-  const [date, setDate] = useState('');
-  const id = navigation.getParam('id');
+  const [date, setDate] = useState("");
+  const id = navigation.getParam("id");
 
   async function handleSubmit() {
-    console.log(date);
-    const user_id = await AsyncStorage.getItem('user');
+    const user_id = await AsyncStorage.getItem("user");
 
     await api.post(
       `/spots/${id}/bookings`,
@@ -29,13 +28,13 @@ export default function Book({ navigation }) {
       }
     );
 
-    Alert.alert('Solicitação de reserva enviada.');
+    Alert.alert("Solicitação de reserva enviada.");
 
-    navigation.navigate('List');
+    navigation.navigate("List");
   }
 
   function handleCancel() {
-    navigation.navigate('List');
+    navigation.navigate("List");
   }
 
   return (
@@ -43,9 +42,9 @@ export default function Book({ navigation }) {
       <Text style={styles.label}>DATA DE INTERESSE *</Text>
       <TextInput
         style={styles.input}
-        placeholder='Qual data você quer reservar?'
-        placeholderTextColor='#999'
-        autoCapitalize='words'
+        placeholder="Qual data você quer reservar?"
+        placeholderTextColor="#999"
+        autoCapitalize="words"
         autoCorrect={false}
         value={date}
         onChangeText={setDate}
@@ -71,18 +70,18 @@ const styles = StyleSheet.create({
   },
 
   label: {
-    fontWeight: 'bold',
-    color: '#444',
+    fontWeight: "bold",
+    color: "#444",
     marginBottom: 8,
     marginTop: 30
   },
 
   input: {
     borderWidth: 1,
-    borderColor: '#ddd',
+    borderColor: "#ddd",
     paddingHorizontal: 20,
     fontSize: 16,
-    color: '#444',
+    color: "#444",
     height: 44,
     marginBottom: 20,
     borderRadius: 2
@@ -90,20 +89,20 @@ const styles = StyleSheet.create({
 
   button: {
     height: 42,
-    backgroundColor: '#f05a5b',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "#f05a5b",
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 2
   },
 
   cancelButton: {
-    backgroundColor: '#ccc',
+    backgroundColor: "#ccc",
     marginTop: 10
   },
 
   buttonText: {
-    color: '#fff',
-    fontWeight: 'bold',
+    color: "#fff",
+    fontWeight: "bold",
     fontSize: 16
   }
 });
