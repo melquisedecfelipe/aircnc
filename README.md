@@ -33,6 +33,7 @@ This project was developed with the following technologies:
 
 Backend
 
+- [Axios](https://github.com/axios/axios)
 - [Cors](https://github.com/expressjs/cors)
 - [Express](https://expressjs.com/)
 - [Mongoose](https://mongoosejs.com/mul)
