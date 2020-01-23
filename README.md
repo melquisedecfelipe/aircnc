@@ -51,6 +51,7 @@ Frontend
 Mobile
 
 - [Axios](https://github.com/axios/axios)
+- [Expo](https://expo.io/)
 - [React native](https://facebook.github.io/react-native/)
 - [React navigation](https://reactnavigation.org/)
 - [Socket.io client](https://github.com/socketio/socket.io-client)
