@@ -68,8 +68,7 @@ $ git clone https://github.com/melquisedecfelipe/aircnc
 $ cd aircnc
 
 # Go into the backend and install dependencies
-$ cd backend
-$ npm i
+$ cd backend && npm i
 
 # Create .env file and add database url
 $ echo "MONGO_URL='mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.net/aircnc?retryWrites=true&w=majority'" >> .env
@@ -78,15 +77,13 @@ $ echo "MONGO_URL='mongodb+srv://<username>:<password>@cluster0-nejwy.mongodb.ne
 $ npm run dev
 
 # Go into the frontend and install dependencies
-$ cd ../frontend
-$ npm i
+$ cd ../frontend && npm i
 
 # Run frontend
 $ npm start
 
 # Go into the mobile and install dependencies
-$ cd ../mobile
-$ npm i
+$ cd ../mobile && npm i
 
 # Run mobile
 $ expo start
